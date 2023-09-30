@@ -26,7 +26,7 @@ public class Main
                 {
                     player2 = trashP2;
                     in.nextLine();
-                    System.out.println(player2);
+                    System.out.println();
 
                 }
                 else
