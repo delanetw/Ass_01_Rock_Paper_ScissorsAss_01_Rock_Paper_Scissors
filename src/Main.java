@@ -157,7 +157,7 @@ public class Main
                     }
                     else
                     {
-                        System.out.println("Please enter a valid input. ");
+                        System.out.println("Please enter a valid input.");
                     }
 
                 }
