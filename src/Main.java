@@ -4,6 +4,8 @@ public class Main
     public static void main(String[] args)
     {
         boolean done = false;
+        boolean doneMoveA = false;
+        boolean doneMoveB = false;
         Scanner in = new Scanner(System.in);
         String player1 = "";
         String player2 = "";
@@ -14,18 +16,41 @@ public class Main
         do
         {
 
-            System.out.print("Player 1 enter Rock [R], Paper [P], or Scissors [S]: ");
-            trashP1 = in.nextLine();
-
-            if(trashP1.equalsIgnoreCase("R") || trashP1.equalsIgnoreCase("P") || trashP1.equalsIgnoreCase("S"))
+            do
             {
-                player1 = trashP1;
+
+                System.out.print("Player 1 enter Rock [R], Paper [P], or Scissors [S]: ");
+                trashP1 = in.nextLine();
+
+                if (trashP1.equalsIgnoreCase("R") || trashP1.equalsIgnoreCase("P") || trashP1.equalsIgnoreCase("S"))
+                {
+                    player1 = trashP1;
+                    doneMoveA = true;
+                }
+                else
+                {
+                    System.out.println("You said: " + trashP1 + ".");
+                    System.out.println("Please enter a valid input.");
+                }
+            }while(!doneMoveA);
+
+            do
+            {
                 System.out.println("Player 2 enter Rock [R], Paper [P], or Scissors [S]: ");
                 trashP2 = in.nextLine();
 
                 if(trashP2.equalsIgnoreCase("R") || trashP2.equalsIgnoreCase("P") || trashP2.equalsIgnoreCase("S"))
                 {
                     player2 = trashP2;
+                    doneMoveB = true;
+                }
+                else
+                {
+                    System.out.println("You said: " + trashP2 + ".");
+                    System.out.println("Please enter a valid input.");
+                }
+
+            }while(!doneMoveB);
 
                     //Player 1 Rock
 
@@ -160,18 +185,8 @@ public class Main
                         System.out.println("Please enter a valid input.");
                     }
 
-                }
-                else
-                {
-                    System.out.println("You said: " + trashP2 + ".");
-                    System.out.println("Please enter a valid input.");
-                }
-            }
-            else
-            {
-                System.out.println("You said: " + trashP1 + ".");
-                System.out.println("Please enter a valid input.");
-            }
+
+
 
         }while(!done);
     }
