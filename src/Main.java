@@ -56,6 +56,9 @@ public class Main
 
                     if(player1.equalsIgnoreCase("R"))
                     {
+
+                        //Player 2 Rock
+
                         if(player2.equalsIgnoreCase("R"))
                         {
                             System.out.println("Rock vs. Rock! It's a TIE!");
@@ -67,6 +70,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Player 2 Paper
+
                         else if(player2.equalsIgnoreCase("P"))
                         {
                             System.out.println("Paper covers Rock! Player 2 WINS!");
@@ -78,6 +84,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Player 2 Scissors
+
                         else if(player2.equalsIgnoreCase("S"))
                         {
                             System.out.println("Rock breaks Scissors! Player 1 WINS!");
@@ -89,6 +98,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Something broke
+
                         else
                         {
                             System.out.println("Please enter a valid input.");
@@ -99,6 +111,9 @@ public class Main
 
                     else if(player1.equalsIgnoreCase("P"))
                     {
+
+                        //Player 2 Rock
+
                         if(player2.equalsIgnoreCase("R"))
                         {
                             System.out.println("Paper covers Rock! Player 1 WINS!");
@@ -110,6 +125,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Player 2 Paper
+
                         else if(player2.equalsIgnoreCase("P"))
                         {
                             System.out.println("Paper vs. Paper! It's a TIE!");
@@ -121,6 +139,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Player 2 Scissors
+
                         else if(player2.equalsIgnoreCase("S"))
                         {
                             System.out.println("Scissors cuts Paper! Player 2 WINS!");
@@ -132,6 +153,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Something Broke
+
                         else
                         {
                             System.out.println("Please enter a valid input.");
@@ -142,6 +166,9 @@ public class Main
 
                     else if(player1.equalsIgnoreCase("S"))
                     {
+
+                        //Player 2 Rock
+
                         if(player2.equalsIgnoreCase("R"))
                         {
                             System.out.println("Rock breaks Scissors! Player 2 WINS!");
@@ -153,6 +180,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Player 2 Paper
+
                         else if(player2.equalsIgnoreCase("P"))
                         {
                             System.out.println("Scissors cuts Paper! Player 1 WINS!");
@@ -164,6 +194,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Player 2 Scissors
+
                         else if(player2.equalsIgnoreCase("S"))
                         {
                             System.out.println("Scissors vs. Scissors! It's a TIE!");
@@ -175,6 +208,9 @@ public class Main
                                 done = true;
                             }
                         }
+
+                        //Something Broke
+
                         else
                         {
                             System.out.println("Please enter a valid input.");
